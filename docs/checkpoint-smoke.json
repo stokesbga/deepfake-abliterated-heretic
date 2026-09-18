@@ -1,0 +1,9 @@
+{
+  "checkpoint_keys": 827,
+  "backbone_forward_finite": true,
+  "vae_roundtrip_finite": true,
+  "dwpose_execution": true,
+  "device": "CPU, FP32",
+  "cuda_tested": false,
+  "quality_tested": false
+}

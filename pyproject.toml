@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "deepfakeheretic"
+version = "0.1.0"
+description = "Video-first DreamID-V face swapping with a bounded single-GPU runtime"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+  "numpy>=1.26,<2", "Pillow>=10,<13", "opencv-python-headless>=4.9,<4.12",
+  "huggingface-hub>=0.34,<1", "onnxruntime>=1.20,<2", "tqdm>=4.66,<5",
+]
+
+[project.optional-dependencies]
+gpu = ["torch==2.6.0", "diffusers==0.35.2", "einops>=0.8,<0.9", "scipy>=1.11,<2"]
+dev = ["pytest>=8,<10", "ruff>=0.9"]
+
+[project.scripts]
+heretic = "deepfakeheretic.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/deepfakeheretic"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+filterwarnings = ["ignore:.*torch.cuda.amp.autocast.*:FutureWarning"]
+
+[tool.ruff]
+line-length = 100
+extend-exclude = ["src/deepfakeheretic/_vendor"]
+

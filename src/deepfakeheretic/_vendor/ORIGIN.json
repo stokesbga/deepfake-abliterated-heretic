@@ -1,0 +1,46 @@
+{
+  "repository": "https://github.com/bytedance/DreamID-V",
+  "commit": "9b589940577559c91481fb3a13bae000a55f97a1",
+  "files": [
+    {
+      "upstream_path": "dreamidv_wan_faster/modules/model.py",
+      "local_path": "wan/model.py",
+      "sha256": "aa0e2c6af8a2d32265146095f93baf03a82db2a2640f7c317c5d09674156d3bd"
+    },
+    {
+      "upstream_path": "dreamidv_wan_faster/modules/projector.py",
+      "local_path": "wan/projector.py",
+      "sha256": "338f897e90f01dca7712a1920db5b8e940473dc5469b3b2c21c844eab2213a9f"
+    },
+    {
+      "upstream_path": "dreamidv_wan_faster/modules/vae.py",
+      "local_path": "wan/vae.py",
+      "sha256": "6a9280d59b0f61a097aef128f025d3153a84418b54099e4e7f546784a7c371fa"
+    },
+    {
+      "upstream_path": "dreamidv_wan_faster/utils/fm_solvers_unipc.py",
+      "local_path": "wan/solver.py",
+      "sha256": "d885dbe7897502b3eec515ee79ee0dc2251977c04a2787ea6c18824204cced12"
+    },
+    {
+      "upstream_path": "pose/dwpose/wholebody.py",
+      "local_path": "dwpose/wholebody.py",
+      "sha256": "ffb52d2596d3b3a491e65cc0d7c22a50dafc7f196eac9d9753a103f02d3df1db"
+    },
+    {
+      "upstream_path": "pose/dwpose/onnxdet.py",
+      "local_path": "dwpose/onnxdet.py",
+      "sha256": "9ef7f99b1119edf4b3d195905c149090052d40028d427be434771a5990f92740"
+    },
+    {
+      "upstream_path": "pose/dwpose/onnxpose.py",
+      "local_path": "dwpose/onnxpose.py",
+      "sha256": "9b978f069151093a06c3b86a5e0e01ebbe6f98009cf3046575c404e80e16ed3a"
+    },
+    {
+      "upstream_path": "LICENSE.txt",
+      "local_path": "LICENSE.txt",
+      "sha256": "a15de28299cf5622f795f5e707af5afdfbff5f2a210b5560957e60414219369b"
+    }
+  ]
+}
